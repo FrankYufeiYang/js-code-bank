@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script src="/test.js" type="module"></script>
+
+    Compare to regular script below:
+
+    <script>
+      alert(typeof button); // button is undefined, the script can't see elements below
+      // regular scripts run immediately, before the rest of the page is processed
+    </script>
+
+    <button id="button">Button</button>
+  </body>
+</html>
