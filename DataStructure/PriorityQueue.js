@@ -7,7 +7,6 @@ class MaxPQ {
     this.pq[++this.length] = value;
     this.moveUp(this.length);
   }
-
   popMax() {
     const max = this.pq[1]
     this.swap(1, this.length);
@@ -16,7 +15,6 @@ class MaxPQ {
     this.moveDown(1)
     return max
   }
-
   // 父节点的索引
   parent(root) {
     return Math.floor(root / 2);
